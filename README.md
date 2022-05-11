@@ -12,3 +12,5 @@ for your Tailnet and add it as a [Codespaces Secret](https://github.com/settings
 named `TAILSCALE_AUTHKEY`.
 
 Then launch your codespace!
+
+Testing a new prebuild works on a new branch successfully!
