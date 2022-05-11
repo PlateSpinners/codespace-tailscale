@@ -17,7 +17,7 @@ COPY . ./
 FROM mcr.microsoft.com/vscode/devcontainers/universal:linux
 USER root
 
-RUN apt-get update && apt-get install -y curl gpg dnsutils
+RUN apt-get update && apt-get install -y curl gpg dnsutils iputils-ping
 COPY tailscaled /etc/init.d
 COPY --from=builder /go/bin/tailscaled /usr/sbin/tailscaled
 COPY --from=builder /go/bin/tailscale /usr/bin/tailscale
